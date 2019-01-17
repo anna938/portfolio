@@ -1,5 +1,4 @@
 //Menu button
-
 .menu-btn {
   position: absolute; // we want to say exaxtly where we want it to be which is going to be over in the corner
   z-index: 3; // we want to be on top
@@ -9,7 +8,7 @@
   @include easeOut;
 
   .btn-line {
-    width: 20px;
+    width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #ffffff;
@@ -17,9 +16,9 @@
   }
 
   // Rotae into X with Menu Lines
-
   &.close {
     transform: rotate(180deg);
+
     .btn-line {
       //Line 1 - Rotate
       &:nth-child(1) {
@@ -90,13 +89,13 @@
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
-
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
   }
+
   .nav-item {
-    transform: translate(600px, 0, 0);
+    transform: translate3d(600px, 0, 0);
     @include easeOut;
 
     &.show {
